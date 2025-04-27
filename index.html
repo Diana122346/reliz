@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Головна - Онлайн Книгарня</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">📚 Книгарня</div>
+  <nav>
+    <a href="index.html">Головна</a>
+    <a href="announcements.html">Анонси</a>
+    <a href="cart.html">Кошик (<span id="cart-count">0</span>)</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="category">
+    <h2>Новинки →</h2>
+    <div class="book-slider">
+      <div class="book-card">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLzPhSVZBfUSGulGJYW7QCKInLK8V7oxc3YTmIwGUEGgL0PxAz-4fFsUOa50nq1Wwki7rqQ0HbXQbSooRMFHGZd3ShR0onZicrVFcbZ9A&usqp=CAc" alt="Книга 1">
+        <p>Світло між океанами<br>430 грн</p>
+        <button onclick="addToCart('Світло між океанами', 430)">Додати в кошик</button>
+      </div>
+      <div class="book-card">
+        <img src="book2.jpg" alt="Книга 2">
+        <p>Маленьке життя<br>490 грн</p>
+        <button onclick="addToCart('Маленьке життя', 490)">Додати в кошик</button>
+      </div>
+      <div class="book-card">
+        <img src="book3.jpg" alt="Книга 3">
+        <p>Куди співають раки<br>410 грн</p>
+        <button onclick="addToCart('Куди співають раки', 410)">Додати в кошик</button>
+      </div>
+      <div class="book-card">
+        <img src="book11.jpg" alt="Книга 11">
+        <p>Великий Гетсбі<br>390 грн</p>
+        <button onclick="addToCart('Великий Гетсбі', 390)">Додати в кошик</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Художня література →</h2>
+    <div class="book-slider">
+      <div class="book-card">
+        <img src="book4.jpg" alt="Книга 4">
+        <p>Сто років самотності<br>380 грн</p>
+        <button onclick="addToCart('Сто років самотності', 380)">Додати в кошик</button>
+      </div>
+      <div class="book-card">
+        <img src="book5.jpg" alt="Книга 5">
+        <p>Портрет Доріана Грея<br>350 грн</p>
+        <button onclick="addToCart('Портрет Доріана Грея', 350)">Додати в кошик</button>
+      </div>
+      <div class="book-card">
+        <img src="book6.jpg" alt="Книга 6">
+        <p>Майстер і Маргарита<br>400 грн</p>
+        <button onclick="addToCart('Майстер і Маргарита', 400)">Додати в кошик</button>
+      </div>
+      <div class="book-card">
+        <img src="book12.jpg" alt="Книга 12">
+        <p>Анна Кареніна<br>430 грн</p>
+        <button onclick="addToCart('Анна Кареніна', 430)">Додати в кошик</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Читати з дітьми →</h2>
+    <div class="book-slider">
+      <div class="book-card">
+        <img src="book7.jpg" alt="Книга 7">
+        <p>Гаррі Поттер<br>350 грн</p>
+        <button onclick="addToCart('Гаррі Поттер', 350)">Додати в кошик</button>
+      </div>
+      <div class="book-card">
+        <img src="book8.jpg" alt="Книга 8">
+        <p>Маленький принц<br>300 грн</p>
+        <button onclick="addToCart('Маленький принц', 300)">Додати в кошик</button>
+      </div>
+      <div class="book-card">
+        <img src="book13.jpg" alt="Книга 13">
+        <p>Вінні-Пух<br>250 грн</p>
+        <button onclick="addToCart('Вінні-Пух', 250)">Додати в кошик</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>Прикладні науки →</h2>
+    <div class="book-slider">
+      <div class="book-card">
+        <img src="book9.jpg" alt="Книга 9">
+        <p>Коротка історія часу<br>460 грн</p>
+        <button onclick="addToCart('Коротка історія часу', 460)">Додати в кошик</button>
+      </div>
+      <div class="book-card">
+        <img src="book10.jpg" alt="Книга 10">
+        <p>Сам собі MBA<br>520 грн</p>
+        <button onclick="addToCart('Сам собі MBA', 520)">Додати в кошик</button>
+      </div>
+      <div class="book-card">
+        <img src="book14.jpg" alt="Книга 14">
+        <p>Фізика майбутнього<br>500 грн</p>
+        <button onclick="addToCart('Фізика майбутнього', 500)">Додати в кошик</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Онлайн Книгарня. Усі права захищені.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
