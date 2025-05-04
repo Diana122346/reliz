@@ -24,22 +24,22 @@
     <div class="book-slider">
       <div class="book-card">
         <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLzPhSVZBfUSGulGJYW7QCKInLK8V7oxc3YTmIwGUEGgL0PxAz-4fFsUOa50nq1Wwki7rqQ0HbXQbSooRMFHGZd3ShR0onZicrVFcbZ9A&usqp=CAc" alt="Книга 1">
-        <p>Світло між океанами<br>430 грн</p>
-        <button onclick="addToCart('Світло між океанами', 430)">Додати в кошик</button>
+        <p >Стейсі Віллінгем </p><p>Світло в темряві<br>430 грн</p>
+        <button onclick="addToCart('Світло в темряві', 430)">Додати в кошик</button>
       </div>
       <div class="book-card">
-        <img src="book2.jpg" alt="Книга 2">
-        <p>Маленьке життя<br>490 грн</p>
+        <img src="https://bookclub.ua/images/db/goods/d/63477_127297_d.jpg" alt="Книга 2">
+        <p>Агата Крісті</p><p>Після похорону<br>300 грн</p>
         <button onclick="addToCart('Маленьке життя', 490)">Додати в кошик</button>
       </div>
       <div class="book-card">
-        <img src="book3.jpg" alt="Книга 3">
-        <p>Куди співають раки<br>410 грн</p>
+        <img src="https://bookclub.ua/images/db/goods/d/63475_127295_d.jpg" alt="Книга 3">
+        <p>Незнайомка в домі<br>410 грн</p>
         <button onclick="addToCart('Куди співають раки', 410)">Додати в кошик</button>
       </div>
       <div class="book-card">
-        <img src="book11.jpg" alt="Книга 11">
-        <p>Великий Гетсбі<br>390 грн</p>
+        <img src="https://bookclub.ua/images/db/goods/d/63476_127296_d.jpg" alt="Книга 11">
+        <p>Дитя Шторму<br>390 грн</p>
         <button onclick="addToCart('Великий Гетсбі', 390)">Додати в кошик</button>
       </div>
     </div>
@@ -116,7 +116,42 @@
 </main>
 
 <footer>
-  <p>© 2025 Онлайн Книгарня. Усі права захищені.</p>
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h3>Про нас</h3>
+      <p>«ЧитайУкраїно» — це простір, де кожна книга відкриває новий світ. Ми любимо читати й ділитися знанням.</p>
+    </div>
+
+    <div class="footer-section subscribe">
+      <h3>Підпишіться на новини</h3>
+      <form onsubmit="event.preventDefault(); alert('Дякуємо за підписку! 📬');">
+        <input type="email" placeholder="Ваша ел. пошта" required>
+        <button type="submit">Підписатися</button>
+      </form>
+    </div>
+
+    <div class="footer-section links">
+      <h3>Посилання</h3>
+      <ul>
+        <li><a href="#">Умови користування</a></li>
+        <li><a href="#">Політика конфіденційності</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section social">
+      <h3>Ми в соцмережах</h3>
+      <div class="social-icons">
+        <a href="#"><img class="photo" src="data:image/png;base64,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" alt="Facebook"></a>
+        <a href="#"><img class="photo" src="data:image/png;base64,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" alt="Instagram"></a>
+        <a href="#"><img class="photo" src="https://img.icons8.com/ios_filled/512/telegram.png" alt="Telegram"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 ЧитайУкраїно. Всі права захищено.</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>

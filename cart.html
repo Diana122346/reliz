@@ -1,32 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кошик - Онлайн Книгарня</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Кошик — Онлайн Книгарня</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="cart.js"></script>
 </head>
 <body>
+  <header>
+    <div class="logo">Книгарня</div>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="announcements.html">Анонси</a>
+      <a href="cart.html" class="active">Кошик</a>
+    </nav>
+  </header>
 
-    <header>
-        <div class="logo">📚 Книгарня</div>
-        <nav>
-            <a href="index.html">Головна</a>
-            <a href="announcements.html">Анонси</a>
-            <a href="cart.html">Кошик (<span id="cart-count">0</span>)</a>
-        </nav>
-    </header>
+  <main>
+    <h2>Ваш кошик 🛒</h2>
+    <div id="cart-container" class="cart-container">
+      <!-- Товари з'являться динамічно -->
+    </div>
+    <div class="cart-summary">
+      <h3>Загальна сума: <span id="total-price">0 ₴</span></h3>
+      <button class="checkout-btn">Оформити замовлення</button>
+      <button class="clear-btn" onclick="clearCart()">Очистити кошик</button>
+    </div>
+  </main>
 
-    <main>
-        <h1>Ваш кошик</h1>
-        <div id="cart-items"></div>
-        <p id="total-price"></p>
-    </main>
-
-    <footer>
-        <p>© 2025 Онлайн Книгарня. Усі права захищені.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+          <h3>Про нас</h3>
+          <p>«ЧитайУкраїно» — це простір, де кожна книга відкриває новий світ. Ми любимо читати й ділитися знанням.</p>
+        </div>
+    
+        <div class="footer-section subscribe">
+          <h3>Підпишіться на новини</h3>
+          <form onsubmit="event.preventDefault(); alert('Дякуємо за підписку! 📬');">
+            <input type="email" placeholder="Ваша ел. пошта" required>
+            <button type="submit">Підписатися</button>
+          </form>
+        </div>
+    
+        <div class="footer-section links">
+          <h3>Посилання</h3>
+          <ul>
+            <li><a href="#">Умови користування</a></li>
+            <li><a href="#">Політика конфіденційності</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-section social">
+          <h3>Ми в соцмережах</h3>
+          <div class="social-icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/59/59439.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/?size=512&id=32320&format=png" alt="Instagram"></a>
+            <a href="#"><img src="img/telegram.svg" alt="Telegram"></a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>&copy; 2025 ЧитайУкраїно. Всі права захищено.</p>
+      </div>
+  </footer>
 </body>
 </html>
